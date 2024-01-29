@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajouter Voiture</title>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <h2>Ajouter une voiture</h2>
+    <form action="traitement_ajout_voiture.php" method="post">
+        <label for="type">Type de carburant :</label>
+        <select id="type" name="type">
+            <option value="essence">Essence</option>
+            <option value="diesel">Diesel</option>
+        </select>
+
+        <label for="puissance">Puissance :</label>
+        <input type="text" id="puissance" name="puissance" required>
+
+        <label for="date_immatriculation">Date d'immatriculation :</label>
+        <input type="date" id="date_immatriculation" name="date_immatriculation" required>
+
+        <label for="couleur">Couleur :</label>
+        <input type="text" id="couleur" name="couleur" required>
+
+        <label for="prix">Prix :</label>
+        <input type="number" id="prix" name="prix" required>
+
+        <label for="marque">Marque :</label>
+        <input type="text" id="marque" name="marque" required>
+
+        <input type="submit" value="Ajouter la voiture">
+    </form>
+</body>
+</html>

@@ -1,0 +1,13 @@
+body{
+    background-color: #708090;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+fieldset{
+    border-color: white;
+}
+legend{
+    font-size: 28px;
+}

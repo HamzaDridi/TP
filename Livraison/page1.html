@@ -1,0 +1,104 @@
+<html>
+<head>
+    <title>Ajouter Colis</title>
+</head>
+<body>
+    <form>
+        <table>
+
+            <tr>
+                <td><label for="nom">Nom:</label></td>
+                <td><input type="text" id="nom" name="nom" required></td>
+            </tr>
+            <tr>
+                <td><label for="telephone">Téléphone:</label></td>
+                <td><input type="tel" id="telephone" name="telephone" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">E-mail:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="gouvernorat">Gouvernorat:</label></td>
+                <td>
+                    <select id="gouvernorat" name="gouvernorat" required>
+                        <option value="Ariana">Ariana</option>
+                        <option value="Béja">Béja</option>
+                        <option value="Ben Arous">Ben Arous</option>
+                        <option value="Bizerte">Bizerte</option>
+                        <option value="Gabès">Gabès</option>
+                        <option value="Gafsa">Gafsa</option>
+                        <option value="Jendouba">Jendouba</option>
+                        <option value="Kairouan">Kairouan</option>
+                        <option value="Kasserine">Kasserine</option>
+                        <option value="Kébili">Kébili</option>
+                        <option value="Le Kef">Le Kef</option>
+                        <option value="Mahdia">Mahdia</option>
+                        <option value="La Manouba">La Manouba</option>
+                        <option value="Médenine">Médenine</option>
+                        <option value="Monastir">Monastir</option>
+                        <option value="Nabeul">Nabeul</option>
+                        <option value="Sfax">Sfax</option>
+                        <option value="Sidi Bouzid">Sidi Bouzid</option>
+                        <option value="Siliana">Siliana</option>
+                        <option value="Sousse">Sousse</option>
+                        <option value="Tataouine">Tataouine</option>
+                        <option value="Tozeur">Tozeur</option>
+                        <option value="Tunis">Tunis</option>
+                        <option value="Zaghouan">Zaghouan</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="adresse">Adresse:</label></td>
+                <td><textarea id="adresse" name="adresse" rows="4" cols="50" required></textarea></td>
+            </tr>
+            
+            <tr>
+                <td><label for="date">Date de livraison:</label></td>
+                <td><input type="date" id="date" name="date" required></td>
+            </tr>
+            <tr>
+                <td><label for="type">Type du colis:</label></td>
+                <td>
+                    <select id="type" name="type" required>
+                        <option value="Fragile">Fragile</option>
+                        <option value="Liquide">Liquide</option>
+                        <option value="Normal">Normal</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="taille">Taille du colis:</label></td>
+                <td> 
+                    <select name="taille" id="">
+                        <option value="Grand">Grand</option>
+                        <option value="Moyen">Moyen</option>
+                        <option value="Petit">Petit</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="poids">Poids du colis:</label></td>
+                <td><input type="number" id="poids" name="poids" required></td>
+            </tr>
+            <tr>
+                <td><label for="valeur">Valeur du colis:</label></td>
+                <td><input type="number" id="valeur" name="valeur" required></td>
+            </tr>
+            <tr>
+                <td><label for="rapide">Livraison rapide:</label></td>
+                <td>
+                    <input type="radio" id="oui" name="rapide" value="oui">
+                    <label for="oui">Oui</label>
+                    <input type="radio" id="non" name="rapide" value="non">
+                    <label for="non">Non</label>
+                </td>
+            </tr>
+        </table>
+        <button type="submit">Envoyer</button>
+    </form>
+</body>
+</html>
+
+        

@@ -1,0 +1,92 @@
+<!-- page3.html -->
+<html>
+<head>
+    <title>Livreur</title>
+<style>
+table {
+  border-collapse: collapse; /* fusionner les bordures */
+  border: 2px solid black; /* bordure du tableau */
+  width: 100%; /* largeur du tableau */
+}
+
+th, td {
+  border: 1px solid black; /* bordure des cellules */
+  padding: 10px; /* espace entre le contenu et la bordure */
+  text-align: center; /* alignement horizontal */
+}
+
+th {
+  background-color: lightblue; /* couleur de fond des titres */
+}
+
+tr:nth-child(even) {
+  background-color: lightgray; /* couleur de fond des lignes paires */
+}
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Téléphone</th>
+                <th>Emplacement actuel</th>
+                <th>Nombre de livraisons</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>François Livreur</td>
+                <td>123-456-7890</td>
+                <td>Centre-ville</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Sophie Express</td>
+                <td>987-654-3210</td>
+                <td>Banlieue Est</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Max Livraisons</td>
+                <td>555-123-4567</td>
+                <td>Quartier Nord</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Léa Rapide</td>
+                <td>333-888-9999</td>
+                <td>Zone Ouest</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Paula Destin</td>
+                <td>111-222-3333</td>
+                <td>Centre-ville</td>
+                <td>18</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h2>Ajouter Livreur</h2>
+    <form>
+        <table border="0">
+            <tr>
+                <td><label for="nom-livreur">Nom du livreur:</label></td>
+                <td><input type="text" id="nom-livreur" name="nom-livreur" required></td>
+            </tr>
+            <tr>
+                <td><label for="telephone-livreur">Téléphone du livreur:</label></td>
+                <td><input type="tel" id="telephone-livreur" name="telephone-livreur" required></td>
+            </tr>
+            <tr>
+                <td><label for="emplacement-livreur">Emplacement actuel du livreur:</label></td>
+                <td><input type="text" id="emplacement-livreur" name="emplacement-livreur" required></td>
+            </tr>
+        </table>
+        
+        <button type="submit">Ajouter</button>
+    </form>
+</body>
+</html>

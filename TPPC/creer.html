@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+        <table>
+          <legend>Choisissez vos composants</legend>
+          <tr>
+            <td><label for="cpu">Processeur:</label></td>
+            <td>
+              <select id="cpu" name="cpu">
+                <option value="i5">Intel Core i5</option>
+                <option value="i7">Intel Core i7</option>
+                <option value="i9">Intel Core i9</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="gpu">Carte graphique:</label></td>
+            <td>
+              <select id="gpu" name="gpu">
+                <option value="gtx1050">Nvidia GTX 1050</option>
+                <option value="gtx1060">Nvidia GTX 1060</option>
+                <option value="gtx1070">Nvidia GTX 1070</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="ram">Mémoire vive:</label></td>
+            <td>
+              <select id="ram" name="ram">
+                <option value="8gb">8 Go</option>
+                <option value="16gb">16 Go</option>
+                <option value="32gb">32 Go</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="storage">Stockage:</label></td>
+            <td>
+              <select id="storage" name="storage">
+                <option value="hdd">Disque dur</option>
+                <option value="ssd">SSD</option>
+              </select>
+            </td>
+          </tr>
+          
+          <tr>
+            <td><label for="accessories">Accessoires:</label></td>
+            <td>
+              <input type="checkbox" id="keyboard" name="keyboard" value="keyboard">
+              <label for="keyboard">Clavier</label>
+              <input type="checkbox" id="mouse" name="mouse" value="mouse">
+              <label for="mouse">Souris</label>
+              <input type="checkbox" id="monitor" name="monitor" value="monitor">
+              <label for="monitor">Moniteur</label>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="reset" value="Annuler"></td>
+            <td><input type="submit" value="Envoyer"></td>
+           </tr>
+                
+        </table>
+      
+ 
+
+
+    </fieldset>
+      </form>
+      
+</body>
+</html>

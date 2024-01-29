@@ -1,0 +1,98 @@
+<html>
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header h1 {
+            margin-left: 20px;
+        }
+        header ul {
+            list-style: none;
+            display: flex;
+            margin-right: 20px;
+        }
+        header ul li {
+            margin: 0 10px;
+        }
+        header ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        header ul li a:hover {
+            color: yellow;
+        }
+        main {
+            
+            margin: 20px auto;
+        }
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        form label {
+            display: block;
+            width: 45%;
+            margin: 10px;
+        }
+        form input {
+            display: block;
+            width: 90%;
+            padding: 5px;
+        }
+        form button {
+            display: block;
+            width: 20%;
+            margin: 10px auto;
+            padding: 10px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: lime;
+        }
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        table th, table td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Entreprise de livraison</h1>
+        <ul>
+            <li><a href="page1.html" target="iframe">Ajouter Colis</a></li>
+            <li><a href="page2.html" target="iframe">Liste des Colis</a></li>
+            <li><a href="page3.html" target="iframe">Livreur</a></li>
+        </ul>
+    </header>
+    <main>
+        <iframe name="iframe" src="page1.html"></iframe>
+    </main>
+</body>
+</html>

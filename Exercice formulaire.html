@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire HTML</title>
+</head>
+<body>
+
+    <form action="/traitement.php" method="POST">
+   
+    <fieldset>
+        <legend> Formulaire d'inscription</legend>   
+          <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom"><br><br>
+
+        <label for="email">Email :</label>
+        <input type="text" id="email" name="email"><br><br>
+
+        <label for="motdepasse">Mot de passe :</label>
+        <input type="password" id="motdepasse" name="motdepasse"><br><br>
+
+        <label for="sexe">Sexe :</label>
+        <input type="radio" id="homme" name="sexe" value="homme">
+        <label for="homme">Homme</label>
+        <input type="radio" id="femme" name="sexe" value="femme">
+        <label for="femme">Femme</label><br><br>
+
+        <label for="pays">Pays :</label>
+        <select id="pays" name="pays">
+            <option value="Tunisie">Tunisie</option>
+            <option value="espagne">Espagne</option>
+            <option value="italie">Italie</option>
+        </select><br><br>
+
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Réinitialiser">
+ 
+
+</fieldset>   </form>
+</body>
+</html>
