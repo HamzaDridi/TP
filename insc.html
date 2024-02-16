@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inscription Club</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #666;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="date"],
+        input[type="number"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Inscription au Club</h2>
+    <form action="#" method="post">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required><br>
+
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required><br>
+
+        <label for="adresse">Adresse :</label>
+        <input type="text" id="adresse" name="adresse" required><br>
+
+        <label for="date_naissance">Date de naissance :</label>
+        <input type="date" id="date_naissance" name="date_naissance" required><br>
+
+        <label for="tel">Numéro de téléphone :</label>
+        <input type="tel" id="tel" name="tel" required><br>
+
+        <label for="email">Adresse email :</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="sexe">Sexe :</label>
+        <input type="radio" id="sexe_homme" name="sexe" value="homme" required> Homme
+        <input type="radio" id="sexe_femme" name="sexe" value="femme" required> Femme<br>
+
+        <label for="gouvernorat">Gouvernorat :</label>
+        <select id="gouvernorat" name="gouvernorat" required>
+            <option value="Tunis">Tunis</option>
+            <option value="Ben Arous">Ben Arous</option>
+            <option value="Ariana">Ariana</option>
+            <option value="Manouba">Manouba</option>
+        </select><br>
+
+        <label for="interet">Liste d'intérêt :</label>
+        <input type="checkbox" id="interet_sport" name="interet1" value="sport"> Sport
+        <input type="checkbox" id="interet_lecture" name="interet2" value="lecture"> Lecture
+        <input type="checkbox" id="interet_musique" name="interet3" value="musique"> Musique<br>
+
+        <label for="note">Note de l'année dernière :</label>
+        <input type="number" id="note" name="note" min="0" max="20" required><br>
+
+        <label for="mot_de_passe">Mot de passe :</label>
+        <input type="password" id="mot_de_passe" name="mot_de_passe" required><br>
+
+        <input type="submit" value="S'inscrire">
+    </form>
+</body>
+</html>
